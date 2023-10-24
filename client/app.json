@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "RaceNews",
+    "slug": "RaceNews",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "fc1d07b4-cb0d-40f2-b475-a0d88d5b15e9"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/fc1d07b4-cb0d-40f2-b475-a0d88d5b15e9"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    }
+  }
+}

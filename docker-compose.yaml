@@ -1,0 +1,23 @@
+version: '3.1'
+services:
+  server-product:
+    build: ./services/server-product
+    container_name: newsproduct-server
+    ports:
+      - 4000:4000
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=postgresql://postgres:9NsldiBhEDjv0uDi@db.weirphytolxxjbhqefgr.supabase.co:5432/postgres
+  server-user:
+    build: ./services/server-user
+    container_name: user-server
+    ports:
+      - 4001:4001
+  orchestrator-graphql:
+    build: ./orchestrator-graphql/
+    container_name: graphql-orchestrator
+    ports:
+      - 80:80
+    environment:
+      - FIRST_SERVER_URL=http://server-product:4000
+      - SECOND_SERVER_URL=http://server-user:4001

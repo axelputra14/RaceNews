@@ -1,0 +1,22 @@
+[
+    {
+        "postId": 1,
+        "name": "News"
+    },
+    {
+        "postId": 1,
+        "name": "Column"
+    },
+    {
+        "postId": 1,
+        "name": "Rumour"
+    },
+    {
+        "postId": 2,
+        "name": "Historic"
+    },
+    {
+        "postId": 2,
+        "name": "Technical"
+    }
+]
